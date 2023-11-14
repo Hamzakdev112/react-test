@@ -1,0 +1,11 @@
+.sidebar{
+    width: 300px;
+    min-height: 100vh;
+    background-color: $primary-color;
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+}

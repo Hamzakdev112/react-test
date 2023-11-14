@@ -1,0 +1,175 @@
+.home {
+    width: calc(100% - 300px);
+    // width: 100%;
+    position: relative;
+
+    .topbar {
+        background-color: white;
+        width: 100%;
+        height: 150px;
+        position: absolute;
+    }
+
+    .container {
+        background-color: #F3F3F3;
+        width: 100%;
+        height: calc(100vh - 150px);
+        margin-top: 150px;
+        padding: 50px;
+        box-sizing: border-box;
+        overflow-y: scroll;
+        overflow-x: auto;
+        border: 1px solid black;
+
+        .new-customer-button {
+            width: 340px;
+            border-radius: 10px;
+            color: white;
+            font-size: 19px;
+            height: 70px;
+            margin-bottom: 50px;
+        }
+
+        .items-table {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            .items-table-header {
+                background: $secondary-color;
+                min-width: 100%;
+                min-height: 60px;
+                font-size: 20px;
+
+                tr {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+
+                    th {
+                        width: 200px;
+                        text-align: start;
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            .items-table-body {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                .items-table-item {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    background-color: white;
+
+                    td {
+                        min-width: 200px;
+                        text-align: start;
+                        height: 124px;
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            border-radius: 10px;
+                            width: 100px;
+                            aspect-ratio: 1;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .action-buttons {
+                        display: flex;
+                        gap: 10px;
+
+                        .edit-btn {
+                            padding: 5px 15px;
+                            border-radius: 5px;
+                            background-color: $secondary-color;
+                            color: $primary-color;
+                            transition: 0.3s ease all;
+                            cursor: pointer;
+                        }
+
+                        .edit-btn:hover {
+                            background-color: $primary-color;
+                            color: $secondary-color;
+                        }
+
+                        .delete-btn {
+                            transition: 0.3s ease all;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            padding: 5px 15px;
+                            background-color: rgb(245, 191, 191);
+                            color: red;
+                        }
+
+                        .delete-btn:hover {
+                            background-color: red;
+                            color: rgb(245, 191, 191);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.customer-modal {
+    min-width: 400px;
+
+    .customer-modal-top {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 143px;
+
+        h2 {
+            color: white;
+        }
+    }
+
+    .customer-modal-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+
+        input{
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+            outline: none;
+        }
+
+        .upload-label {
+            text-align: start;
+            cursor: pointer;
+            text-decoration: underline;
+            color: $primary-color;
+        }
+
+        .submitButton {
+            width: 90%;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: auto;
+            color: white;
+            cursor: pointer;
+        }
+        .img{
+            width: 50px;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+}
+
+
+
+.app {
+    display: flex;
+}
+
+.box-shadow {
+    box-shadow: 1px 4px 10px -4px rgba(204, 204, 204, 1);
+    -webkit-box-shadow: 1px 4px 10px -4px rgba(204, 204, 204, 1);
+    -moz-box-shadow: 1px 4px 10px -4px rgba(204, 204, 204, 1);
+}
+
+.gradient {
+    background: rgb(87, 188, 144);
+    background: linear-gradient(90deg, rgba(87, 188, 144, 1) 35%, rgba(0, 75, 64, 1) 100%);
+}
+
+.button {
+    border: none;
+}
+
+
+
